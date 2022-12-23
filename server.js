@@ -1,4 +1,4 @@
-const employees = [
+const workers = [
     {
         id: 0,
         name: 'Elman',
@@ -21,12 +21,12 @@ const employees = [
 const express = require('express');
 const app = express();
 
-app.get('/employee', function (req, res) {
-    res.json(employees);
+app.get('/workers', function (req, res) {
+    res.json(workers);
   });
 
-// app.get('/employee/:id', function (req, res) {
-//   res.json(employees[req.params.id]);
+// app.get('/worker/:id', function (req, res) {
+//   res.json(workers[req.params.id]);
 // });
 
 app.listen(3000, function () {
